@@ -1,4 +1,4 @@
-//Nomor 2
+//Number 2
 void main(){
   print("Kelipatan dari 10 adalah: ${hitungfaktorial(10)}");
   print("Kelipatan dari 20 adalah: ${hitungfaktorial(20)}");

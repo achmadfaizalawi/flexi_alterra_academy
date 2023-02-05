@@ -1,4 +1,4 @@
-//Nomor 2
+//Number 2
 void main(){
   String namaDepan = "Achmad";
   String namaTengah = "Faiz";

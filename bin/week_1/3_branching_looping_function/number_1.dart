@@ -1,4 +1,4 @@
-//Nomor 1
+//Number_1
 void main(){
   int nilai = 100;
   if(nilai > 70){

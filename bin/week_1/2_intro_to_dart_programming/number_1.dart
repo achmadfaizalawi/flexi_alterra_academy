@@ -1,4 +1,4 @@
-//Nomor 1
+//Number 1
 void main(){
   print(luasLingkaran(20));
 }
