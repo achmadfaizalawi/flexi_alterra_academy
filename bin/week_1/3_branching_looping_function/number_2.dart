@@ -1,14 +1,26 @@
 //Number 2
 void main(){
-  print("Kelipatan dari 10 adalah: ${hitungfaktorial(10)}");
-  print("Kelipatan dari 20 adalah: ${hitungfaktorial(20)}");
-  print("Kelipatan dari 30 adalah: ${hitungfaktorial(30)}");
+  //Memanggil dan menampilkan hasil pengembalian fungsi "hitungFaktorial"
+  print("Nilai Faktorial 10: ${hitungFaktorial(10)}");
+  print("Nilai Faktorial 20: ${hitungFaktorial(20)}");
+  print("Nilai Faktorial 30: ${hitungFaktorial(30)}");
 }
 
-double hitungfaktorial(int nilaifaktorial){
+//Inisialisasi fungsi untuk menghitung nilai faktorial
+double hitungFaktorial(final double nilaiFaktorial){
+  /*
+  Fungsi akan menghitung nilai faktorial dengan perulangan for
+  Nilai "faktorial" akan dikalikan dengan nilai "kelipatan" yang increment hingga == "nilaiFaktorial"
+  Rumusnya yaitu: faktorial = faktorial x kelipatan 
+  */
+
+  //Inisialisasi variabel untuk menampung nilai faktorial
   double faktorial = 1;
-  for(double kelipatan = 1; kelipatan <= nilaifaktorial; kelipatan++){
-    faktorial *=kelipatan;
+  //Inisialisasi perulangan for untuk looping perhitungan nilai faktorial
+  for(double kelipatan = 1; kelipatan <= nilaiFaktorial; kelipatan++){
+    //Inisialisasi rumus untuk menghitung faktorial kedalam program
+    faktorial *=kelipatan; //Bisa juga dengan faktorial=faktorial*kelipatan
   }
+  //Mengembalikan nilai faktorial kedalam fungsi
   return faktorial;
 }
