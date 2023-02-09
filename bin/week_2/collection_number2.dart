@@ -26,9 +26,10 @@ void main(){
 //Membuat list multidimensi dengan parameter jumlah sublist dan jumlah elemen didalam sublist
 List newList(final int jumlahSubList, final int jumlahElementSubList){
   /*
-  'jumlahSubList' = untuk membuat banyaknya sublist pada List.
-  'jumlahElementSubList' = untuk membuat banyaknya element didalam sublist pada List.
-  "null" hanya sebagai parameter untuk menentukan jenis tipe data element didalam sublist.
+  Catatan:
+  1. 'jumlahSubList' = untuk membuat banyaknya sublist pada List.
+  2. 'jumlahElementSubList' = untuk membuat banyaknya element didalam sublist pada List.
+  3. "null" hanya sebagai parameter untuk menentukan jenis tipe data element didalam sublist.
   */
   var tList = List.generate(jumlahSubList, (i) => List.generate(jumlahElementSubList, (i) => "null", growable: true), growable: true);
   return tList;
@@ -37,10 +38,11 @@ List newList(final int jumlahSubList, final int jumlahElementSubList){
 //Menambahkan nilai masukan pada element setiap sublist
 List listMakanan(final List inputList, final int indeksData, final int indeksSubData, final String nilaiMasukan){
   /*
-  'inputList' = sebagai pemanggil List yang akan diberi nilai masukan.
-  'indeksData' = sebagai pemanggil indeks sublist mana yang akan diberi nilai masukan.
-  'indeksSubData' = sebagai pemanggil indeks element sublist mana yang akan diberi nilai masukan.
-  'nilaiMasukan' = sebagai tempat untuk menyimpan nilai masukan.
+  Catatan:
+  1. 'inputList' = sebagai pemanggil List yang akan diberi nilai masukan.
+  2. 'indeksData' = sebagai pemanggil indeks sublist mana yang akan diberi nilai masukan.
+  3. 'indeksSubData' = sebagai pemanggil indeks element sublist mana yang akan diberi nilai masukan.
+  4. 'nilaiMasukan' = sebagai tempat untuk menyimpan nilai masukan.
   */
   final List listBaru = inputList;
   listBaru[indeksData][indeksSubData] = nilaiMasukan;
