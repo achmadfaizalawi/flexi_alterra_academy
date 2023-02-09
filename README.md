@@ -1,4 +1,4 @@
-# task_alterra_academy
+# flexi_alterra_academy
 This is a repository for save my bootcamp task at Alterra Academy.
 
 To try run the program code, you can use several ways:
