@@ -30,10 +30,10 @@ Future listData(final List listData, final int pengali) async{
   //Deklarasi variabel 'newList' untuk menyimpan List baru
   final List newList = List.empty(growable: true);
   /*
-  1. Perulangan untuk mengalikan List 'newData' pada void main dengan nilai 'pengali',
-  2. Perulangan dilakukan dengan mendelay terlebih dahulu program,
-  3. Setelah 2 detik, perulangan akan mengalikan isi List 'newData' dengan 'pengali',
-  4. Ditambahkan 'await' agar program menunggu delay terlebih dahulu sebelum lanjut ke proses selanjutnya,
+  1. Perulangan untuk mengalikan List 'newData' pada void main dengan nilai 'pengali'.
+  2. Perulangan dilakukan dengan mendelay terlebih dahulu program.
+  3. Setelah 2 detik, perulangan akan mengalikan isi List 'newData' dengan 'pengali'.
+  4. Ditambahkan 'await' agar program menunggu delay terlebih dahulu sebelum lanjut ke proses selanjutnya.
   */
   await Future.delayed(Duration(seconds: 2), () {
     for(int i in listData){
