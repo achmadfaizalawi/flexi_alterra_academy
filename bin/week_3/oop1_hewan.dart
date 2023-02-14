@@ -7,11 +7,12 @@
 */
 abstract class Hewan{
   //Deklarasi variabel untuk menampung total berat badan dari hewan.
-  double beratBadan = 0;
-
+  double _beratBadan = 0;
+  //Berfungsi untuk mengambil atribut '_beratBadan' yang privat.
+  double get beratBadan => _beratBadan;
   //Deklarasi method untuk menghitung total dari 'beratBadan'.
   void totalBerat(double berat){
     //Deklarasi agar nilai 'berat' dijumlahkan dengan nilai 'beratBadan'.
-    beratBadan += berat;
+    _beratBadan += berat;
   }
 }
